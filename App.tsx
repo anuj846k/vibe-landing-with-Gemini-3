@@ -11,31 +11,37 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-brand-orange/20 scroll-smooth">
+    <div className="min-h-screen bg-white text-gray-900 font-sans selection:bg-brand-orange/20 scroll-smooth antialiased">
       <Navbar />
       
       <main>
-        <section id="home" className="pt-8 pb-16 lg:pt-12 lg:pb-12">
+        {/* Hero Section */}
+        <section id="home" className="pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
           <Hero />
           <CompanyLogos />
         </section>
 
+        {/* Services / Features */}
         <section id="features">
           <Services />
         </section>
 
+        {/* Process */}
         <section id="process">
           <Process />
         </section>
 
+        {/* Testimonials / About */}
         <section id="about">
           <Testimonials />
         </section>
 
+        {/* Pricing */}
         <section id="pricing">
           <Pricing />
         </section>
 
+        {/* Call to Action */}
         <CTA />
       </main>
 
