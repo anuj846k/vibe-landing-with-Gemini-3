@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Search, BarChart2, PenTool, MessageCircle, Mail, Globe, ArrowRight } from 'lucide-react';
 
@@ -63,12 +64,12 @@ const Services: React.FC = () => {
                 {services.map((service, index) => (
                     <div 
                         key={index} 
-                        className="group p-8 bg-white rounded-2xl shadow-sm hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:border-brand-orange/20 transition-all duration-300 flex flex-col items-start h-full relative overflow-hidden"
+                        className="group p-8 bg-white rounded-2xl shadow-sm hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 hover:border-brand-orange/20 transition-all duration-300 flex flex-col items-start h-full relative overflow-hidden hover:scale-[1.02] hover:rotate-1"
                     >
                         {/* Hover Gradient Background */}
                         <div className="absolute inset-0 bg-gradient-to-br from-brand-orange/0 to-brand-orange/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                        <div className="relative z-10 w-14 h-14 rounded-xl bg-orange-50 text-brand-orange flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                        <div className="relative z-10 w-14 h-14 rounded-xl bg-orange-50 text-brand-orange flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 group-hover:animate-pulse">
                             <service.icon size={28} strokeWidth={1.5} />
                         </div>
                         

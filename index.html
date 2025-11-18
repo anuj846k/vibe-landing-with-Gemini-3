@@ -27,6 +27,8 @@
               'float-delayed': 'float 6s ease-in-out 3s infinite',
               'fade-in-up': 'fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards',
               'scale-in': 'scaleIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards',
+              'marquee': 'marquee 40s linear infinite',
+              'beam': 'beam 3s linear infinite',
             },
             keyframes: {
               float: {
@@ -40,6 +42,15 @@
               scaleIn: {
                 '0%': { opacity: '0', transform: 'scale(0.9)' },
                 '100%': { opacity: '1', transform: 'scale(1)' },
+              },
+              marquee: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              beam: {
+                '0%': { left: '-50%', opacity: '0' },
+                '5%': { opacity: '1' },
+                '100%': { left: '100%', opacity: '0' },
               }
             }
           }
@@ -81,6 +92,5 @@
 </head>
   <body>
     <div id="root"></div>
-        <script type="module" src="/index.tsx"></script>
   </body>
 </html>

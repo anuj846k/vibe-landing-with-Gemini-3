@@ -16,7 +16,7 @@ const App: React.FC = () => {
       
       <main>
         {/* Hero Section */}
-        <section id="home" className="pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden">
+        <section id="home" className=" pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
           <Hero />
           <CompanyLogos />
         </section>
